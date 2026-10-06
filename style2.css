@@ -1,0 +1,20 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;line-height:1.6;color:#222;background:#f7f7f7}
+.site-header{position:sticky;top:0;background:#a3a4e8;border-bottom:1px solid #ddd;z-index:10}
+.navbar{max-width:1100px;margin:auto;padding:14px 20px;display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-weight:700;text-decoration:none;color:#222}
+.nav-links{display:flex;gap:20px;flex-wrap:wrap}
+.nav-links a{color:#222;text-decoration:none}
+.nav-links a:hover,.nav-links a:focus{text-decoration:underline}
+.hero{padding:90px 20px;text-align:center;background:#e9eef5}
+.hero h1{font-size:clamp(2rem,5vw,4rem);margin:.2em 0}
+.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:2px}
+.button{display:inline-block;background:#222;color:#fff;padding:10px 18px;border:0;border-radius:5px;text-decoration:none;cursor:pointer}
+.section{max-width:1000px;margin:auto;padding:65px 20px}
+.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project-card{background:#c1d0f2;padding:24px;border:1px solid #ddd;border-radius:8px}
+.contact-form{max-width:600px;display:grid;gap:10px}
+input,textarea{font:inherit;padding:11px;border:1px solid #aaa;border-radius:5px}
+footer{text-align:center;background:#a3a4e8;color:#fff;padding:20px}
+@media(max-width:700px){.navbar{align-items:flex-start;flex-direction:column}.project-grid{grid-template-columns:1fr}}
